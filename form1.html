@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+
+    <h1>Checkout form</h1>
+
+    <form id="checkoutForm">
+
+        <h2>Billing address</h2>
+
+        <!-- First name -->
+        <div>
+            <label for="firstName">First name</label><br>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <!-- Last name -->
+        <div>
+            <label for="lastName">Last name</label><br>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <!-- Username -->
+        <div>
+            <label for="username">Username</label><br>
+            @
+            <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email (Optional)</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <!-- Address -->
+        <div>
+            <label for="address">Address</label><br>
+            <input type="text" id="address" name="address" placeholder="1234 Main St" required>
+        </div>
+
+        <!-- Address 2 -->
+        <div>
+            <label for="address2">Address 2 (Optional)</label><br>
+            <input type="text" id="address2" name="address2" placeholder="Apartment or suite">
+        </div>
+
+        <!-- Country -->
+        <div>
+            <label for="country">Country</label><br>
+
+            <select id="country" name="country" required>
+                <option value="">Choose...</option>
+                <option value="unitedStates">United States</option>
+            </select>
+        </div>
+
+        <!-- State -->
+        <div>
+            <label for="state">State</label><br>
+
+            <select id="state" name="state" required>
+                <option value="">Choose...</option>
+                <option value="california">California</option>
+            </select>
+        </div>
+
+        <!-- Zip -->
+        <div>
+            <label for="zip">Zip</label><br>
+            <input type="text" id="zip" name="zip" required>
+        </div>
+
+        <div>
+            <label for="orderNote">Delivery Instructions</label><br>
+
+            <textarea id="orderNote" name="orderNote" rows="5" cols="40"
+                placeholder="Enter any special requests for your order."></textarea>
+        </div>
+
+        <hr>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="sameAddress" name="sameAddress">
+
+            <label for="sameAddress">
+                Shipping address is the same as my billing address
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="saveInfo" name="saveInfo">
+
+            <label for="saveInfo">
+                Save this information for next time
+            </label>
+        </div>
+
+        <hr>
+
+        <h2>Payment</h2>
+
+        <!-- Payment method -->
+        <div>
+            <input type="radio" id="credit" name="paymentMethod" value="credit" checked>
+
+            <label for="credit">Credit card</label>
+        </div>
+
+        <div>
+            <input type="radio" id="debit" name="paymentMethod" value="debit">
+
+            <label for="debit">Debit card</label>
+        </div>
+
+        <div>
+            <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+
+            <label for="paypal">PayPal</label>
+        </div>
+
+        <!-- Name on card -->
+        <div>
+            <label for="cardName">Name on card</label><br>
+            <input type="text" id="cardName" name="cardName" required>
+
+            <small>Full name as displayed on card</small>
+        </div>
+
+        <!-- Credit card number -->
+        <div>
+            <label for="cardNumber">Credit card number</label><br>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+        </div>
+
+        <!-- Expiration -->
+        <div>
+            <label for="expiration">Expiration</label><br>
+            <input type="date" id="expiration" name="expiration" required>
+        </div>
+
+        <!-- CVV -->
+        <div>
+            <label for="cvㅊ">CVC</label><br>
+            <input type="text" id="cvc" name="cvc" required>
+        </div>
+
+        <hr>
+
+        <!-- Submit -->
+        <button type="submit">
+            Continue to checkout
+        </button>
+
+    </form>
+
+</body>
+
+</html>
