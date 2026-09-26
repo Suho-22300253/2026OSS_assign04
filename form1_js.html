@@ -193,8 +193,8 @@
                     <select class="form-select" id="country" name="country" required>
 
                         <option value="">Choose...</option>
-                        <option>United States</option>
-                        <option>Korea</option>
+                        <option value="usa">United States</option>
+                        <option value="korea">Korea</option> <!--country.value 를 통해 korea usa를 받을 수 있음-->
 
                     </select>
 
@@ -210,7 +210,6 @@
                     <select class="form-select" id="state" name="state" required>
 
                         <option value="">Choose...</option>
-                        <option>California</option>
 
                     </select>
 
@@ -375,7 +374,7 @@
     const form = document.querySelector("#checkoutForm");
 
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
 
         const email = document.querySelector("#email");
 
@@ -441,6 +440,30 @@
 
 
     });
+
+    const country = document.querySelector("#country");
+    const state = document.querySelector("#state");
+
+    country.addEventListener("change", function(){
+        if(country.value =="usa"){
+            state.innerHTML = `
+                <option value="">Choose...</option>
+                <option value="california">California</option>
+                <option value="texas">Texas</option>
+                <option value="newyork">New York</option>
+            `;
+        }
+
+        if(country.value =="korea"){
+            state.innerHTML = `
+                <option value="">Choose...</option>
+                <option value="seoul">Seoul</option>
+                <option value="busan">Busan</option>
+                <option value="incheon">Incheon</option>
+            `;
+        }
+    });
+
 
 
 </script>
