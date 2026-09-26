@@ -32,3 +32,7 @@ Country와 State를 각각 별도의 select로 만들었을 때 Country에 따�
 
 ## Reflection
 이번 실습을 통해 HTML Form은 단순히 입력창을 만드는 것이 아니라 사용자의 데이터를 입력받고 검증하여 처리할 수 있는 구조라는 것을 이해하게 되었다. 특히 HTML의 Validation 기능과 JavaScript를 함께 사용하면 사용자가 잘못된 값을 입력했을 때 직접 안내하고 입력 위치까지 이동시킬 수 있다는 점을 알게 되었다. 또한 Bootstrap을 사용하면 CSS를 직접 작성하지 않아도 Form의 기본적인 디자인을 쉽게 적용할 수 있다는 것을 알게 되었다.
+
+## Clone Coding
+
+- Original URL: https://getbootstrap.com/docs/5.2/examples/checkout/
